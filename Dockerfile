@@ -1,12 +1,12 @@
 FROM python:3.9
 
-# Install Flask and any other dependencies your app needs
-RUN pip install Flask
+# Install flask and pandas
+RUN pip install flask
 RUN pip install pandas
 
 # Copy the code for your app into the container
 COPY app.py /app.py
-COPY cleaned_dataset.csv ./
+ADD dataset ./
 
 # Run the app when the container starts
 CMD ["python", "/app.py"]
