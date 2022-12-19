@@ -29,12 +29,11 @@ curl -X GET http://localhost:5000/api/v1/status
 curl -X GET http://localhost:5000/api/v1/sentences
 ```
 
-The app is also able to return 10 sentences starting from arbitary index, so that students can learn translation pairs from where they left last time. For example, instead of the first 10 sentences, you want to choose the 10th to 20th sentence pairs, you can add "\?index\=10" to the website, or simply run:
+The app is also able to return 10 sentences starting from arbitary index, so that students can learn translation pairs from where they left last time. For example, instead of the first 10 sentences, you want to choose the 10th to 20th sentence pairs, you can add "?index=10" to the website: http://localhost:5000/api/v1/sentences?index=10, or simply run:
 
 
 ```
 curl http://localhost:5000/api/v1/sentences\?index\=10
-
 ```
 
 ## Task 3 - Report
