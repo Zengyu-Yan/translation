@@ -38,3 +38,4 @@ curl http://localhost:5000/api/v1/sentences\?index\=10
 
 ## Task 3 - Report
 
+I conduct an intial research on Optical Character Recognition (OCR) and the report is in file "Initial Research on Optical Character Recognition.docx"
