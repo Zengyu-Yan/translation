@@ -5,7 +5,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the dataframe with the translation pairs
-df = pd.read_csv("dataset/cleaned_dataset.csv")
+df = pd.read_csv("cleaned_dataset.csv")
 
 @app.route("/api/v1/status", methods=['GET'])
 def status():
