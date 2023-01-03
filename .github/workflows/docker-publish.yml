@@ -1,3 +1,4 @@
+
 name: Docker
 
 # This workflow uses actions that are not certified by GitHub.
@@ -7,7 +8,7 @@ name: Docker
 
 on:
   schedule:
-    - cron: '21 13 * * *'
+    - cron: '16 8 * * *'
   push:
     branches: [ "main" ]
     # Publish semver tags as releases.
@@ -93,4 +94,5 @@ jobs:
           COSIGN_EXPERIMENTAL: "true"
         # This step uses the identity token to provision an ephemeral certificate
         # against the sigstore community Fulcio instance.
-        run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} cosign sign {}@${{ steps.build-and-push.outputs.digest }}
+        run: echo "${{ steps.meta.outputs.tags }}" 
+        #| xargs -I {} cosign sign {}@${{ steps.build-and-push.outputs.digest }}
